@@ -70,6 +70,97 @@ for line in logs:
     
 februarylogs.close()
 
+logs = open("log.txt","r")
+
+marchlogs = open("marchlogs.txt","w")
+marpattern = re.compile (r"(/[Mar]{3}/[0-9]{4})")
+
+for line in logs:
+    if marpattern.search(line) != None:
+        marchlogs.write(line)
+    else:
+        continue
+    
+marchlogs.close()
+
+logs = open("log.txt","r")
+
+aprillogs = open("aprillogs.txt","w")
+aprpattern = re.compile (r"(/[Apr]{3}/[0-9]{4})")
+
+for line in logs:
+    if aprpattern.search(line) != None:
+        aprillogs.write(line)
+    else:
+        continue
+    
+aprillogs.close()
+
+logs = open("log.txt","r")
+
+maylogs = open("maylogs.txt","w")
+maypattern = re.compile (r"(/[May]{3}/[0-9]{4})")
+
+for line in logs:
+    if maypattern.search(line) != None:
+        maylogs.write(line)
+    else:
+        continue
+    
+maylogs.close()
+
+logs = open("log.txt","r")
+
+junelogs = open("junelogs.txt","w")
+junpattern = re.compile (r"(/[Jun]{3}/[0-9]{4})")
+
+for line in logs:
+    if junpattern.search(line) != None:
+        junelogs.write(line)
+    else:
+        continue
+    
+junelogs.close()
+
+logs = open("log.txt","r")
+
+julylogs = open("julylogs.txt","w")
+julpattern = re.compile (r"(/[Jul]{3}/[0-9]{4})")
+
+for line in logs:
+    if julpattern.search(line) != None:
+        julylogs.write(line)
+    else:
+        continue
+    
+julylogs.close()
+
+logs = open("log.txt","r")
+
+augustlogs = open("augustlogs.txt","w")
+augpattern = re.compile (r"(/[Aug]{3}/[0-9]{4})")
+
+for line in logs:
+    if augpattern.search(line) != None:
+        augustlogs.write(line)
+    else:
+        continue
+    
+augustlogs.close()
+
+logs = open("log.txt","r")
+
+septemberlogs = open("septemberlogs.txt","w")
+seppattern = re.compile (r"(/[Sep]{3}/[0-9]{4})")
+
+for line in logs:
+    if seppattern.search(line) != None:
+        septemberlogs.write(line)
+    else:
+        continue
+    
+septemberlogs.close()
+
 ### Operations to answer questions ###
 
 with open("novemberlogs.txt", "r") as n:
